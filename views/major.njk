@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Node JS - Nunjucks</title>
+    <link type="text/css" rel="stylesheet" href="http://localhost:3000/css/style.css" />
+    
+    <style>
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+      }
+
+      .container p {
+        font-size: 1.3rem;
+        color: #FFF;
+        margin: 20px 0;
+      }
+
+      .container .btn-back {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        text-decoration: none;
+        color: #FFF;
+      }
+
+      .container .btn-back:hover {
+        opacity: .7;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <a href="/" class="btn-back">< Voltar</a>
+      <img src="http://localhost:3000/images/couple-old.svg" width="130" />
+      <p>Voce é maior de idade e possui {{ age }} anos.</p>  
+    </div>
+  </body>
+</html>
